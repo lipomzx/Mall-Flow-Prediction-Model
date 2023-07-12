@@ -141,18 +141,15 @@ class Node:
 
     @property
     # for oop without getter and setter, property(fget=None, fset=None, fdel=None, doc=None)
-    
-    ''' 
-    temperature = property(get_temperature, set_temperature)
-    above same as:
-        @property 
-        def temperature(self):
-        return self._temperature
-
-        @temperature.setter
-        def temperature(self, temp):
-        self._temperature = temp
-    '''
+    # temperature = property(get_temperature, set_temperature)
+    #     above same as:
+    #         @property 
+    #         def temperature(self):
+    #         return self._temperature
+            
+    #         @temperature.setter
+    #         def temperature(self, temp):
+    #         self._temperature = temp
 
     def is_leaf(self):
         return self.score == float('-inf') or self.depth <= 0 
